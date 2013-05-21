@@ -1,0 +1,13 @@
+<html>
+   <head>
+      <title>{{ title }} {{ _("Home") }}</title>
+   </head>
+   <body>
+    <div><img src="{{ static_url("images/logo.png") }}"/></div>
+     <ul>
+       {% for item in items %}
+         <li>{{ escape(item) }}</li>
+       {% end %}
+     </ul>
+   </body>
+ </html>
